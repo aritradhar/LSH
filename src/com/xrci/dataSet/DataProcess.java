@@ -16,7 +16,7 @@ public class DataProcess {
 		
 		while((st = br.readLine()) != null)
 		{
-			String firstElement = st.split(",")[0];
+			String firstElement = st.split("#")[0].trim();
 			String pre = firstElement.split(" ==> ")[0];
 			if(pre.contains(" "))
 			{

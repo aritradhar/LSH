@@ -93,10 +93,10 @@ public class Table {
 				t[rep].insert(new String(c[i]));
 
 			System.out.println(t[rep].size());
-			long st_q = System.currentTimeMillis();
-			System.out.println(t[rep].query("abc"));
-			long en_q = System.currentTimeMillis();;
-			System.out.println("Query time : " + (en_q - st_q) + " ms");
+			long st_q = System.nanoTime();
+			System.out.println(t[rep].query("xyz"));
+			long en_q = System.nanoTime();;
+			System.out.println("Query time : " + (en_q - st_q) + " ns");
 			tot += (en_q - st_q);
 		}
 		
